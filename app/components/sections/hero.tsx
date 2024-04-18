@@ -2,7 +2,7 @@
 
 function Hero() {
   return (
-    <section className="bg-zinc-900 h-screen">
+    <section className=" h-screen">
       <div className="w-full h-full pt-24">
         <div className="grid grid-cols-2">
           <div className="col-span-1">

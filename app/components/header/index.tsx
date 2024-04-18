@@ -27,21 +27,21 @@ export default function HeaderComponent({
   return (
     <>
       <header
-        className={`${customWidht} bg-zinc-900 p-2 rounded-md bg-opacity-80 mx-auto z-10 transition-all duration-2000 ease-in fixed`}
+        className={`${customWidht} bg-zinc-900 p-2 rounded-md bg-opacity-80 mx-auto z-10 transition-all duration-2000 ease-in fixed w-full`}
       >
-        <div className="flex gap-4 ">
+        <div className="flex gap-4  text-white">
           <button
             type="button"
             className={`bg-zinc-800 rounded-md hover:bg-zinc-700 border-zinc-600 border ${customWidhtButton}`}
             onClick={handleHidenToolbar}
           >
-            <h1 className="p-2 w-max">SDC-Menu</h1>
+            <h1 className="p-2 w-max ">SDC-Menu</h1>
           </button>
           <div
             className={`${hidenRefs} flex bg-zinc-800 rounded-md w-full p-2`}
             id="refs"
           >
-            <h1 className="p-2 animate-pulse">Home</h1>
+            <h1 className="p-2 ">Home</h1>
             <ul className="flex gap-2 w-full justify-around">{children}</ul>
           </div>
         </div>
