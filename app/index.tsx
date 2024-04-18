@@ -1,11 +1,9 @@
 "use client";
 
+import Hero from "./components/sections/hero";
+
 function Index() {
-  return (
-    <div>
-      <div></div>
-    </div>
-  );
+  return <Hero></Hero>;
 }
 
 export default Index;
