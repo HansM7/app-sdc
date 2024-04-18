@@ -1,11 +1,13 @@
-/** @format */
-
 "use client";
 
 import Hero from "./components/sections/hero";
 
 function Index() {
-  return <Hero></Hero>;
+  return (
+    <>
+      <Hero></Hero>
+    </>
+  );
 }
 
 export default Index;
