@@ -7,7 +7,7 @@ import { homeRef } from "./lib/utils";
 
 export default function Home() {
   return (
-    <div className='px-4'>
+    <div className='px-4 bg-slate-400'>
       <HeaderComponent>
         {homeRef.map((ref) => {
           return <LiComponent name={ref.name} idRef={ref.idRef} />;

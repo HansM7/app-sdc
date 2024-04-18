@@ -15,7 +15,7 @@ export const homeRef: Ref[] = [
     idRef: "about",
   },
   {
-    name: "About",
-    idRef: "about",
+    name: "nose",
+    idRef: "...",
   },
 ];
