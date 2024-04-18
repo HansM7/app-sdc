@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Tilt_Neon } from "next/font/google";
+import HeaderComponent from "./components/header";
+import LiComponent from "./components/header/li";
+import { homeRef } from "./lib/utils";
 
 import "./globals.css";
 
@@ -22,8 +25,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>{children}</body>
+    <html lang='en'>
+      {/* max-md:hidden */}
+      <body className={`${poppins.className} grid justify-items-center `}>
+        <HeaderComponent add={"max-md:hidden"}>
+          {homeRef.map((ref) => {
+            return <LiComponent name={ref.name} idRef={ref.idRef} />;
+          })}
+        </HeaderComponent>
+
+        {children}
+
+        <HeaderComponent add={"border-red-500 border md:hidden"}>
+          {homeRef.map((ref) => {
+            return <LiComponent name={ref.name} idRef={ref.idRef} />;
+          })}
+        </HeaderComponent>
+      </body>
     </html>
   );
 }

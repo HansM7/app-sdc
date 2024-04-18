@@ -19,3 +19,14 @@ export const homeRef: Ref[] = [
     idRef: "...",
   },
 ];
+
+export const abouutRef: Ref[] = [
+  {
+    name: "nose 3",
+    idRef: "...",
+  },
+  {
+    name: "nose 4",
+    idRef: "...",
+  },
+];
