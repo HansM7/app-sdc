@@ -1,3 +1,5 @@
+/** @format */
+
 "use client";
 
 import Hero from "./components/sections/hero";
