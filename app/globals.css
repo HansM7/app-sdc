@@ -4,3 +4,12 @@
 body{
 	font-family: var(--font-tilt);
 }
+
+.select-header button{
+	background-color: #3f3f46;
+	color: white!important;
+}
+
+.select-header button:hover{
+	background-color: #3f3f46;
+}

@@ -5,6 +5,7 @@ import LiComponent from "./components/header/li";
 import { homeRef } from "./lib/utils";
 
 import "./globals.css";
+import { Providers } from "./providers/next-ui.provider";
 
 const inter = Inter({ subsets: ["latin"] });
 const tilt_neon = Tilt_Neon({ subsets: ["latin"], variable: "--font-tilt" });
@@ -25,10 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       {/* max-md:hidden */}
       <body className={`${poppins.className} grid justify-items-center `}>
-        <HeaderComponent add={"max-md:hidden"}>
+        <Providers>{children}</Providers>
+        {/* <HeaderComponent add={"max-md:hidden"}>
           {homeRef.map((ref) => {
             return <LiComponent name={ref.name} idRef={ref.idRef} />;
           })}
@@ -40,7 +42,7 @@ export default function RootLayout({
           {homeRef.map((ref) => {
             return <LiComponent name={ref.name} idRef={ref.idRef} />;
           })}
-        </HeaderComponent>
+        </HeaderComponent> */}
       </body>
     </html>
   );
